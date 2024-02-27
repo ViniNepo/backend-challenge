@@ -1,0 +1,6 @@
+rootProject.name = 'backend-challenge'
+include 'core'
+include 'infrastructure'
+include 'usecase'
+include 'application'
+
