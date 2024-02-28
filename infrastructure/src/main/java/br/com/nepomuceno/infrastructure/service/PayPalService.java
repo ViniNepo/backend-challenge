@@ -14,8 +14,8 @@ import static br.com.nepomuceno.domain.enums.ErrorCodeEnum.P001;
 
 @Service
 public class PayPalService implements PaymentService {
-    private static final String CLIENT_ID = ""; //add client id here
-    private static final String CLIENT_SECRET = ""; //add client secret here
+    private static final String CLIENT_ID = "AZnMZX723R-pvYmC_zzRD9WHVKxRDdi7noPfWBBIbKCcHIntG3VjPDRgYsr84i6waGYnKuy58_N4uazz"; //add client id here
+    private static final String CLIENT_SECRET = "ELUWW_G8GW0Cch65vwyo0qgFZ9ZRucpmXE7QR7Yft6lqPH0NYBz39Kl2mwWSkLcbZ5uu9hLevxFqREZp"; //add client secret here
     private static final String MODE = "sandbox";
     @Override
     public String process(OrderDetail order) throws Exception {
@@ -49,7 +49,7 @@ public class PayPalService implements PaymentService {
         PayerInfo payerInfo = new PayerInfo();
         payerInfo.setFirstName("Vinicius")
                 .setLastName("Nepomuceno")
-                .setEmail("vi.nepomuceno@outlook.com");
+                .setEmail("sb-qp1s829711616@personal.example.com");
 
         payer.setPayerInfo(payerInfo);
 
