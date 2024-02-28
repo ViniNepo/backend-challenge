@@ -14,9 +14,8 @@ import static br.com.nepomuceno.domain.enums.ErrorCodeEnum.P001;
 
 @Service
 public class PayPalService implements PaymentService {
-    private static final String CLIENT_ID = "AcW77BpZreje1rKlSGY7O4pvx8FjwE8lAqiwy7H1vd_qMxtoEZapcOKKdpouQYIEFaMjxeIbk5f5jDVr";
-
-    private static final String CLIENT_SECRET = "EP8Hm5phAXl08wUUORVZyl4h3onXFpAaB-Wx-ajhkiPVcndUjM0VBR7oJrtXDm_qzM4MTmVmcyvLaxkD";
+    private static final String CLIENT_ID = ""; //add client id here
+    private static final String CLIENT_SECRET = ""; //add client secret here
     private static final String MODE = "sandbox";
     @Override
     public String process(OrderDetail order) throws Exception {
