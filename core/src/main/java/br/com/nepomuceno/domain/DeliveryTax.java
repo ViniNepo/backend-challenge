@@ -2,12 +2,12 @@ package br.com.nepomuceno.domain;
 
 import br.com.nepomuceno.domain.enums.TaxTypeEnum;
 
-public class Voucher {
+public class DeliveryTax {
 
     private TaxTypeEnum taxTypeEnum;
     private Double value;
 
-    public Voucher(TaxTypeEnum voucherType, Double amount) {
+    public DeliveryTax(TaxTypeEnum voucherType, Double amount) {
         this.taxTypeEnum = voucherType;
         this.value = amount;
     }

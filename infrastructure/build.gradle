@@ -19,6 +19,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-devtools'
     implementation 'org.apache.commons:commons-lang3:3.8.1'
+    implementation group: 'com.paypal.sdk', name: 'rest-api-sdk', version: '1.14.0'
+
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation platform('org.junit:junit-bom:5.9.1')

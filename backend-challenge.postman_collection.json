@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "a4d7f28d-8ca8-46c4-9641-90762c204fd2",
+		"name": "backend-challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12983681",
+		"_collection_link": "https://lively-station-391554.postman.co/workspace/pessoal~24caba5d-46d5-484e-a89d-96df92074421/collection/12983681-a4d7f28d-8ca8-46c4-9641-90762c204fd2?action=share&source=collection_link&creator=12983681"
+	},
+	"item": [
+		{
+			"name": "create-link",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"payersDTO\": [\r\n        {\r\n            \"paymentMethod\": \"PAYPAL\",\r\n            \"amount\": 42\r\n        },\r\n        {\r\n            \"paymentMethod\": \"PAYPAL\",\r\n            \"amount\": 8\r\n        }\r\n    ],\r\n    \"serviceTaxDTO\": {\r\n            \"taxTypeEnum\": \"REAL\",\r\n            \"amount\": 0\r\n    },\r\n\r\n    \"deliveryTaxDTO\": {\r\n            \"taxTypeEnum\": \"REAL\",\r\n            \"amount\": 8\r\n    },\r\n    \"voucherDTO\": {\r\n        \"taxTypeEnum\": \"REAL\",\r\n        \"amount\": 20\r\n    },\r\n    \"totalAmount\": 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/payment/create-link",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"payment",
+						"create-link"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

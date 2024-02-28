@@ -1,10 +1,11 @@
 package br.com.nepomuceno.domain.enums;
 
-public enum PaymentMethodEnum {
-    PAYPAL("paypal");
+public enum TaxTypeEnum {
+    REAL("real"),
+    PERCENTAGE("percentage");
 
     private String type;
-    PaymentMethodEnum(String type) {
+    TaxTypeEnum(String type) {
         this.type = type;
     }
 
@@ -15,6 +16,4 @@ public enum PaymentMethodEnum {
     public void setType(String type) {
         this.type = type;
     }
-
-
 }
